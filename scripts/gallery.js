@@ -8,11 +8,11 @@ newTable.setAttribute("style", "margin: auto; width: " + width + "%");
 var imgIndex = 0;
 var path = "images/projects/";
 var images = [
-    [
-        "budget/budget-limit.png",
-        "budget/budget-logs.png",
-        "budget/budget-savings.png",
-    ],
+    // [
+    //     "budget/budget-limit.png",
+    //     "budget/budget-logs.png",
+    //     "budget/budget-savings.png",
+    // ],
     [
         "budget/event-list.png",
         "budget/event-create.png",
