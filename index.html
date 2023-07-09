@@ -1,11 +1,15 @@
 <HTML>
     <HEAD>
-        <TITLE> Xaria Prempeh </TITLE>
-        <link rel="icon" type="image/x-icon" href="favicon.jpg">
-        <link rel='stylesheet' href='styles.css'>
+        <TITLE> Xaria Prempeh's Portfolio </TITLE>
+        <link rel="icon" type="image/x-icon" href="images/favicon.svg">
+        <link rel='stylesheet' href='styles/animations.css'>
+        <link rel='stylesheet' href='styles/background.css'>
+        <link rel='stylesheet' href='styles/buttons.css'>
+        <link rel='stylesheet' href='styles/images.css'>
+        <link rel='stylesheet' href='styles/layout.css'>
     </HEAD>
 
-    <BODY class="bg1">
+    <BODY class="dynamic-bg">
         <!-- TITLE -->
         <div class="titleBar" style="border-radius: 100px 100px 0 0;">
             <div class="titleBar" style="border-radius: 0 0 100px 100px;">
@@ -26,15 +30,17 @@
             <div class="circleLine R"> </div>
         </div>
 
-        <div class="menu" align="center"> </div>
+        <div id="navbar" align="center"> </div>
 
         <!-- CONTENT -->
-        <div class="contentBox">
+        <div id="contentBox">
             <br>
-            <div style="width: 200px; margin: auto; text-align: center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
-                <h2 id="boxTitle"> About Me </h2>
-                <img onclick='changeBG()' id="boxIcon" src="icons/icon1.jpg" style="height: 100px; width: 100px; border-radius: 100%;">
+            
+            <div id="section-head">
+                <h2 id="section-heading"> Projects </h2>
+                <img class="icon" id="section-img" onclick='changeBG()' src="images/pic2.jpg">
             </div>
+
             <br>
 
             <div id="About Me">
@@ -79,7 +85,10 @@
         
         <br>
 
-        <script src="script.js"></script>
+        <script src="scripts/animations.js"></script>
+        <script src="scripts/background.js"></script>
+        <script src="scripts/gallery.js"></script>
+        <script src="scripts/navigation.js"></script>
 
     </BODY>
 </HTML>

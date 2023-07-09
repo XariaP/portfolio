@@ -1,0 +1,131 @@
+/* Animated background shifts between 2 colours */
+.dynamic-bg {
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+    background-size: 300% 300%;
+    background-image: linear-gradient(
+        45deg, 
+            rgb(42, 135, 178) 0%, 
+            rgb(41, 56, 133) 25%, 
+            rgb(65, 29, 78) 51%, 
+            rgb(8, 3, 5) 100%
+    );  
+    animation: AnimateBG 20s ease infinite;
+}
+
+@keyframes AnimateBG { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+
+/* Animated background with image zooming in and out slowly */
+.zoom-bg{
+    position: relative;
+    background-color: black;
+}
+
+.zoom-bg:before {
+    position: fixed;
+    top: 0;
+    left: 0;
+    content: ""; /*needed for :before*/
+    width: 100%;
+    height: 100%;
+    background: url('../images/background1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 60%;
+    animation: bg_zoom 10s 0s linear infinite alternate;
+    z-index: -999; /* send back */
+}
+
+@keyframes bg_zoom {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    100% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+
+
+/* Plain white background */
+.white-bg {
+    background-color: white;
+    color: black;
+}
+
+
+/* Plain dark background */
+.black-bg{
+    background-color: black;
+    color: white;
+}
+
+/* .black-bg .menuButton{
+    background-color: black;
+    color: white;
+} */
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.white-bg .modal{
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}

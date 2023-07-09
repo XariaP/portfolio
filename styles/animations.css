@@ -1,0 +1,53 @@
+.circle{
+    float: left;
+    width: calc(33.333% - 10px);
+    height: calc(33.333% - 10px);
+    margin: 5px;
+    border-radius: 100%;
+    /* mix-blend-mode: exclusion; */
+}
+
+.circle.red{
+    background-color: rgb(206, 19, 122);
+    animation: circle_scale 1s 0s ease infinite alternate;
+}
+
+.circle.purple{
+    background-color: rgb(197, 19, 206);
+    animation: circle_scale 2s 0s ease infinite alternate;
+}
+
+.circle.blue{
+    background-color: rgb(19, 103, 206);
+    animation: circle_scale 4s 0s ease infinite alternate;
+}
+
+@keyframes circle_scale {
+    0% {
+        -webkit-transform: scale(0);
+                transform: scale(0);
+    }
+    100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+}
+
+.circleLine{
+    width: 50px;
+    height: 50px;
+    align-items: center;
+}
+
+.circleLine.L{
+    float: left;
+}
+
+.circleLine.R{
+    float: right;
+}
+
+.line{
+    margin: auto;
+    align-items: center;
+}
