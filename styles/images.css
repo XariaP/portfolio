@@ -31,3 +31,7 @@ img.icon{
 }
 
 .myImg:hover {opacity: 0.7;}
+
+td {
+    text-align: center;
+}

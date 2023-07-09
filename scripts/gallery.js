@@ -2,24 +2,35 @@ const newTable = document.createElement("table");
 const newRow = document.createElement("tr");
 newTable.appendChild(newRow);
 
-var width = 30;
+var width = 60;
 newTable.setAttribute("style", "margin: auto; width: " + width + "%");
 
 var imgIndex = 0;
+var path = "images/projects/";
 var images = [
     [
-        "projects/Lovely Livres 2.png"
+        "budget/budget-limit.png",
+        "budget/budget-logs.png",
+        "budget/budget-savings.png",
     ],
     [
-        "projects/Budgie - Shopping List (1).png",
-        "projects/Budgie - Shopping List (2).png",
-        "projects/Budgie - Budget (1).png",
-        "projects/Lifezy - To Do (1).png",
+        "budget/event-list.png",
+        "budget/event-create.png",
+        "budget/event-view.png",
     ],
     [
-        "projects/Family Manager 1.png",
-        "projects/Family Manager 2.png",
+        "budget/routine-create.png",
+        "budget/routine-day.png",
+        "budget/routine-view.png",
     ],
+    [
+        "budget/profile-view.png",
+    ],
+    [
+        "budget/shopping-list.png",
+        "budget/shopping-item.png",
+        "budget/shopping-section.png",
+    ]
 ]
 
 for (let i = 0; i < images[imgIndex].length; i++){
@@ -27,8 +38,10 @@ for (let i = 0; i < images[imgIndex].length; i++){
     let image = document.createElement("img");
     newRow.appendChild(newCell);
     newCell.appendChild(image);
-    image.setAttribute("src", images[imgIndex][i]);
+    image.setAttribute("src", path + images[imgIndex][i]);
     image.setAttribute("width", "100%");
+    if (images[imgIndex].length == 1)
+        image.setAttribute("width", "33%");
 
     let id = "img" + imgIndex + i;
     image.setAttribute("id", id);
@@ -51,8 +64,10 @@ function changeImages(){
         let image = document.createElement("img");
         newRow.appendChild(newCell);
         newCell.appendChild(image);
-        image.setAttribute("src", images[imgIndex][i]);
+        image.setAttribute("src", path + images[imgIndex][i]);
         image.setAttribute("width", "100%");
+        if (images[imgIndex].length == 1)
+            image.setAttribute("width", "33%");
 
         let id = "img" + imgIndex + i;
         image.setAttribute("id", id);
@@ -77,7 +92,7 @@ function zoomImage(where){
 var modal = document.getElementById("myModal");
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
-var modalImg = document.getElementById("img01");
+var modalImg = document.getElementById("modal-img");
 var captionText = document.getElementById("caption");
 
 function openImg(id){
