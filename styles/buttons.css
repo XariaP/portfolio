@@ -20,5 +20,6 @@ button{
             rgba(152,68,183,1) 51%, 
             rgba(255,53,127,1) 100%
     );
+    color: white;
     cursor: pointer;
 }
