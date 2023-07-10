@@ -39,15 +39,27 @@
     align-items: center;
 }
 
-.circleLine.L{
+/* .circleLine.L{
     float: left;
 }
 
-.circleLine.R{
+.circleLine.R{ 
     float: right;
-}
+ } */
 
 .line{
-    margin: auto;
+    /* margin: auto; */
     align-items: center;
+    display: flex;
+    width: max-content;
+}
+
+.decor {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.header {
+    grid-template-columns: auto auto auto;
 }
