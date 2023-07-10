@@ -56,6 +56,16 @@ var projects = [
         ],
         desc: "Information about screen here",
     },
+    // {
+    //     id: "proj6",
+    //     title: "Profile (2020)",
+    //     screens: [
+    //         {id: "a", src: "webpages/restify-search.png", desc: "Information about screen 1 here"},
+    //         // {id: "b", src: "budget/routine-day.png", desc: "Information about screen 2 here"},
+    //         // {id: "c", src: "budget/routine-view.png", desc: "Information about screen 3 here"},
+    //     ],
+    //     desc: "Information about screen here",
+    // },
 ]
 
 {/* <div class="division">

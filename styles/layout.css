@@ -62,6 +62,25 @@ body{
     /* max-height: 100%; */
 }
 
+/* .proj_grid2 {
+    display: grid;
+    background-color: rgba(0, 0, 0, 0.651);
+
+    border-radius: 50px;
+    grid-template-columns: auto;
+    column-gap: 50px;
+    padding: 20px 50px;
+    margin: 10px;
+    
+}
+
+.proj_grid2 .img_gallery{
+    display: flex;
+    row-gap: 10px;
+    flex-direction: row;
+    justify-content: space-around;
+} */
+
 body.dynamic2-bg .proj_grid{
     background-color: rgba(255, 255, 255, 0.649);
 }
