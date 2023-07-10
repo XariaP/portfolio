@@ -39,27 +39,39 @@
     align-items: center;
 }
 
-/* .circleLine.L{
-    float: left;
-}
+@media only screen and (min-width: 601px) {
+  
+    .circleLine.L{
+        float: left;
+    }
 
-.circleLine.R{ 
-    float: right;
- } */
+    .circleLine.R{ 
+        float: right;
+    }
+
+    #navbar{
+        /* background-color: aliceblue; */
+        margin-bottom: 20px;
+    }
+}
 
 .line{
-    /* margin: auto; */
     align-items: center;
-    display: flex;
-    width: max-content;
 }
 
-.decor {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-}
+@media only screen and (max-width: 600px) {
+    .line{
+        display: flex;
+        /* width: max-content; */
+        width: 100vw;
+        /* justify-content:space-between; */
+        justify-content: space-evenly;
+    }
 
-.header {
-    grid-template-columns: auto auto auto;
+    .decor {
+        display: flex;
+        /* justify-content: space-between; */
+        margin-bottom: 10px;
+    }
+
 }
