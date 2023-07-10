@@ -1,48 +1,62 @@
-function changeCentre(pid, imgid){
+function changeCentre(pid, imgid, desc){
     document.getElementById(pid).src = document.getElementById(imgid).src;
-    console.log("?");
+    // console.log("?");
+    // for (let screen of p)
+    document.getElementById(pid + "-info").innerHTML = desc;
 }
 
-var path = "images/projects/";
-var images = [
-    // [
-    //     "budget/budget-limit.png",
-    //     "budget/budget-logs.png",
-    //     "budget/budget-savings.png",
-    // ],
-    [
-        "budget/event-list.png",
-        "budget/event-create.png",
-        "budget/event-view.png",
-    ],
-    [
-        "budget/routine-create.png",
-        "budget/routine-day.png",
-        "budget/routine-view.png",
-    ],
-    [
-        "budget/profile-view.png",
-    ],
-    [
-        "budget/shopping-list.png",
-        "budget/shopping-item.png",
-        "budget/shopping-section.png",
-    ]
-]
-
 var projects = [
+    {
+        id: "proj1",
+        title: "Event Planner (2020)",
+        screens: [
+            {id: "a", src: "budget/event-list.png", desc: "Information about screen 1 here"},
+            {id: "b", src: "budget/event-create.png", desc: "Information about screen 2 here"},
+            {id: "c", src: "budget/event-view.png", desc: "Information about screen 3 here"},
+        ],
+        desc: "Information about screen here",
+    },
     {
         id: "proj2",
         title: "Budget Planner (2020)",
         screens: [
-            {id: "a", src: "budget/event-list.png"},
-            {id: "b", src: "budget/event-create.png"},
-            {id: "c", src: "budget/event-view.png"},
+            {id: "a", src: "budget/budget-limit.png", desc: "Information about screen 1 here"},
+            {id: "b", src: "budget/budget-logs.png", desc: "Information about screen 2 here"},
+            {id: "c", src: "budget/budget-savings.png", desc: "Information about screen 3 here"},
+        ],
+        desc: "Information about screen here",
+    },
+    {
+        id: "proj3",
+        title: "Daily Schedule Planner (2020)",
+        screens: [
+            {id: "a", src: "budget/routine-create.png", desc: "Information about screen 1 here"},
+            {id: "b", src: "budget/routine-day.png", desc: "Information about screen 2 here"},
+            {id: "c", src: "budget/routine-view.png", desc: "Information about screen 3 here"},
+        ],
+        desc: "Information about screen here",
+    },
+    {
+        id: "proj4",
+        title: "Shopping List (2020)",
+        screens: [
+            {id: "a", src: "budget/shopping-list.png", desc: "Information about screen 1 here"},
+            {id: "b", src: "budget/shopping-item.png", desc: "Information about screen 2 here"},
+            {id: "c", src: "budget/shopping-section.png", desc: "Information about screen 3 here"},
+        ],
+        desc: "Information about screen here",
+    },
+    {
+        id: "proj5",
+        title: "Profile (2020)",
+        screens: [
+            {id: "a", src: "budget/profile-view.png", desc: "Information about screen 1 here"},
+            // {id: "b", src: "budget/routine-day.png", desc: "Information about screen 2 here"},
+            // {id: "c", src: "budget/routine-view.png", desc: "Information about screen 3 here"},
         ],
         desc: "Information about screen here",
     },
 ]
-
 
 {/* <div class="division">
     Budget Planner (2020)
@@ -103,7 +117,7 @@ for (p of projects){
         var frame = document.createElement("div");
         var id = p.id + "-" + screen.id;
         frame.className = "crop";
-        frame.setAttribute("onclick", "changeCentre('" + p.id + "', '" + id + "')");
+        frame.setAttribute("onclick", "changeCentre('" + p.id + "', '" + id + "', '" + screen.desc + "')");
         img_gallery.appendChild(frame);
 
         var pic = document.createElement("img");
@@ -127,7 +141,8 @@ for (p of projects){
     // </div>
     var info = document.createElement("div");
     info.className = "info";
-    info.innerHTML = p.desc; 
+    info.id = p.id + "-info";
+    info.innerHTML = p.screens[0].desc; 
     grid.appendChild(info);
 }
 
