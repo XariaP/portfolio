@@ -121,10 +121,12 @@ body.dynamic2-bg .proj_grid{
     background-color: black;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 600px) {
     .proj_grid {
       grid-template-columns: auto;
       gap: 20px;
+      /* margin: 0; */
+      padding: 10 0;
     }
     .img_gallery{
         flex-direction: row;
@@ -133,6 +135,28 @@ body.dynamic2-bg .proj_grid{
     .crop {
         height: 20vw;
         width: 20vw;
+        max-width: 100px;
+        max-height: 100px;
+    }
+    .project_photo{
+        max-height: 50vh;
+    }
+  }
+
+
+  @media only screen and (max-width: 1000px) {
+    .proj_grid {
+      /* grid-template-columns: auto; */
+      gap: 20px;
+      /* margin: 0; */
+      /* padding: 10 0; */
+      padding: 20px;
+    }
+    .crop {
+        height: 20vw;
+        width: 20vw;
+        max-width: 100px;
+        max-height: 100px;
     }
     .project_photo{
         max-height: 50vh;
@@ -144,7 +168,7 @@ body.dynamic2-bg .proj_grid{
 
 .info {
     margin: auto;
-    font-size: 25px;
+    font-size: 18px;
 }
 
 
