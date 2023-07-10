@@ -1,4 +1,4 @@
-var backgrounds = ["dynamic", "white", "black"]; // "zoom",
+var backgrounds = ["dynamic", "dynamic2", "white", "black"]; // "zoom",
 var current_bg = 0;
 
 function changeBG(){

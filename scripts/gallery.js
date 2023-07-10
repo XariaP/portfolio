@@ -2,7 +2,8 @@ const newTable = document.createElement("table");
 const newRow = document.createElement("tr");
 newTable.appendChild(newRow);
 
-var width = 60;
+// var width = 60;
+var width = 20;
 newTable.setAttribute("style", "margin: auto; width: " + width + "%");
 
 var imgIndex = 0;
