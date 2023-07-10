@@ -1,4 +1,7 @@
 /* Animated background shifts between 2 colours */
+/* body{
+    display: block;
+} */
 .dynamic2-bg {
     height: 50vh;
     align-items: center;
@@ -11,7 +14,7 @@
             rgb(236, 235, 235) 50%, 
             rgb(255, 255, 255) 100%
     );  
-    animation: AnimateBG 20s ease infinite;
+    animation: AnimateBG 15s ease infinite;
 }
 
 body.dynamic2-bg {
@@ -31,7 +34,9 @@ body.dynamic2-bg {
             rgb(120, 3, 146) 100%
             /* rgb(8, 3, 5) 100% */
     );  
-    animation: AnimateBG 20s ease infinite;
+    /* animation: AnimateBG 20s ease infinite; */
+    
+    animation: AnimateBG 15s ease infinite;
 }
 
 @keyframes AnimateBG { 
