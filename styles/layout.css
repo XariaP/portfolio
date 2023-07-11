@@ -2,9 +2,9 @@ body{
     color: white;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     display: none;
-}
+} */
 
 .titleBar{
     height: 60px;
