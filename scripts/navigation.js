@@ -39,5 +39,8 @@ function changeSection(index){
 
         document.getElementById(ID).style.display = status;
     }
-
+    
+    document.getElementById("project-showcase").style.display = "none";
+    if (sections[index].name == "Projects") 
+        document.getElementById("project-showcase").style.display = "block";
 }
