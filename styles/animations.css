@@ -12,8 +12,19 @@
     animation: circle_scale 1s 0s ease infinite alternate;
 }
 
+/* .dynamic-bg .circle.red {
+    background-color: red;
+}
+.dynamic-bg .circle.purple {
+    background-color: white;
+}
+.dynamic-bg .circle.blue {
+    background-color: blue;
+} */
+
 .circle.purple{
-    background-color: rgb(197, 19, 206);
+    background-color: rgb(198, 58, 206);
+    /* background-color: rgb(197, 19, 206); */
     animation: circle_scale 2s 0s ease infinite alternate;
 }
 
@@ -64,8 +75,8 @@
         display: flex;
         /* width: max-content; */
         width: 100vw;
-        /* justify-content:space-between; */
-        justify-content: space-evenly;
+        justify-content:space-between;
+        /* justify-content: space-evenly; */
     }
 
     .decor {

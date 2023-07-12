@@ -3,6 +3,16 @@ function changeCentre(pid, imgid, desc){
     // console.log("?");
     // for (let screen of p)
     document.getElementById(pid + "-info").innerHTML = desc;
+
+    
+    
+    var array = document.getElementsByClassName(pid + "-gallery");
+    [...array].forEach(element => {
+        element.classList.remove("selected");
+        console.log(array, element);
+    });
+
+    document.getElementById(imgid).classList.add("selected");
 }
 
 var projects = [
@@ -121,7 +131,7 @@ for (p of projects){
 
     var img_gallery = document.createElement("div");
     img_gallery.className = "img_gallery";
-    grid.appendChild(img_gallery);
+    // grid.appendChild(img_gallery);
 
     for (screen of p.screens){
         var frame = document.createElement("div");
@@ -133,6 +143,7 @@ for (p of projects){
         var pic = document.createElement("img");
         pic.id = id;
         pic.className = "photo_selection";
+        pic.classList.add(p.id + "-gallery");
         pic.src = path + screen.src; // + ext;
         frame.appendChild(pic);
     }
@@ -145,6 +156,8 @@ for (p of projects){
     centre.classList.add("myImg");
     centre.src = path + p.screens[0].src;      
     grid.appendChild(centre);
+
+    grid.appendChild(img_gallery);
 
     // <div class="info">
     //     Information about screen here 

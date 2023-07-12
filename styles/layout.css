@@ -33,6 +33,10 @@ body{
     height: fit-content;
     margin: 10px;
     border-radius: 50px;
+    /* width: max-content;
+    margin: auto;
+    padding-left: 50px;
+    padding-right: 50px; */
 }
 
 #contentBox div{
@@ -54,7 +58,7 @@ body{
     background-color: rgba(0, 0, 0, 0.651);
     
     /* background-color: rgba(255, 255, 255, 0.649); */
-    border-radius: 50px;
+    /* border-radius: 0px; */
     grid-template-columns: auto auto 1fr;
     column-gap: 50px;
     padding: 20px 50px;
@@ -135,7 +139,8 @@ body.dynamic2-bg .proj_grid{
     /* position: relative; */
     overflow: hidden;
     
-    border-radius: 10vw;
+    /* border-radius: 10vw; */
+    border-radius: 20px;
     
     background-color: black;
 }
@@ -201,7 +206,13 @@ body.dynamic2-bg .proj_grid{
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.403);
     margin: 10px;
-    border-radius: 50px;
+    border-radius: 20px;
+
+    margin-bottom: 100px;
+}
+
+.dynamic-bg .container, .dynamic-bg #contentBox {
+    background-color: rgba(126, 126, 126, 0.403);
 }
 
 .division{
@@ -213,18 +224,22 @@ body.dynamic2-bg .proj_grid{
 
     /* background-color: rgba(57, 57, 57, 0.403); */
     background-color: rgba(255, 255, 255, 0.629);
-    
-    margin: 10px;
+
     border-radius: 50px;
     /* color: white; */
     font-weight: 700;
     
     
     margin: auto;
-    margin-top: 200px;
+    margin-top: 25px;
+    /* margin-top: 100px; */
     margin-bottom: 25px;
     width: max-content;
     padding: 0 40px;
+}
+
+.dynamic-bg .division {
+    background-color: rgba(11, 11, 11, 0.629);
 }
 
 .block{

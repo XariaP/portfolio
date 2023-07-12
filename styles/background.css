@@ -2,19 +2,28 @@
 /* body{
     display: block;
 } */
+
+html, body{
+    height: 100%;
+}
 .dynamic2-bg {
     height: 50vh;
     align-items: center;
     justify-content: center;
     background-size: 300% 300%;
     background-image: linear-gradient(
-        45deg, 
-            rgb(251, 87, 185) 0%,
+        /* 45deg,  */
+        90deg,
+        /* 180deg, */
+            /* rgb(251, 87, 185) 0%,
             rgb(255, 180, 215) 25%,      
             rgb(236, 235, 235) 50%, 
-            rgb(255, 255, 255) 100%
+            rgb(255, 255, 255) 100% */
+            rgb(255, 180, 215) 0%,      
+            rgb(236, 235, 235) 50%, 
+            rgb(245, 243, 243) 100%
     );  
-    animation: AnimateBG 15s ease infinite;
+    animation: AnimateBG 20s ease infinite;
 }
 
 body.dynamic2-bg {
@@ -22,21 +31,40 @@ body.dynamic2-bg {
 }
 
 .dynamic-bg {
-    height: 50vh;
+    /* height: 50vh; */
     align-items: center;
     justify-content: center;
     background-size: 300% 300%;
-    background-image: linear-gradient(
-        45deg, 
+    /* background-image: linear-gradient(
+        45deg,
             rgb(42, 135, 178) 0%, 
             rgb(41, 56, 133) 25%, 
             rgb(106, 54, 124) 51%, 
             rgb(120, 3, 146) 100%
-            /* rgb(8, 3, 5) 100% */
+    );   */
+    
+    background-image: linear-gradient(
+        /* 45deg,  */
+        90deg,
+            #640e5d 0%,
+            #341c5f 50%, 
+            #0c0548 100%
     );  
+
+     /* background-image: linear-gradient(
+        90deg, 
+            rgb(42, 135, 178) 0%, 
+            rgb(41, 56, 133) 17%, 
+            rgb(106, 54, 124) 33%, 
+            rgb(120, 3, 146) 50%,
+            rgb(106, 54, 124) 67%, 
+            rgb(41, 56, 133) 83%, 
+            rgb(42, 135, 178) 100% 
+    );   */
+    
     /* animation: AnimateBG 20s ease infinite; */
     
-    animation: AnimateBG 15s ease infinite;
+    animation: AnimateBG 20s ease infinite;
 }
 
 @keyframes AnimateBG { 
@@ -95,6 +123,11 @@ body.dynamic2-bg {
 
 .black-bg .menuButton{
     background-color: rgb(60, 59, 59);
+    color: white;
+}
+
+.dynamic-bg .menuButton{
+    background-color: rgb(31, 29, 29);
     color: white;
 }
 

@@ -5,6 +5,11 @@ img.icon{
     border-radius: 100%;
 }
 
+img.banner{
+    width: 50vw;
+    /* position: absolute; */
+}
+
 
 
 /* The Close Button */
@@ -30,7 +35,7 @@ img.icon{
     transition: 0.3s;
 }
 
-.myImg:hover {opacity: 0.7;}
+.myImg:hover, .selected {opacity: 0.7;}
 
 td {
     text-align: center;
@@ -49,3 +54,4 @@ td {
     /* top: -20px; */
     /* position: absolute */
 /* } */
+
