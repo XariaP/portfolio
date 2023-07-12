@@ -261,6 +261,7 @@ body {
 .credits {
     text-align: center;
     height: 3rem;
+    margin-top: 0;
     bottom: 0px;
 }
 
