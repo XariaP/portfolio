@@ -40,9 +40,9 @@ var projects = [
         id: "proj3",
         title: "Daily Schedule Planner (2020)",
         screens: [
-            {id: "a", src: "budget/routine-create.png", desc: "Information about screen 1 here"},
+            {id: "a", src: "budget/routine-view.png", desc: "Information about screen 1 here"},
             {id: "b", src: "budget/routine-day.png", desc: "Information about screen 2 here"},
-            {id: "c", src: "budget/routine-view.png", desc: "Information about screen 3 here"},
+            {id: "c", src: "budget/routine-create.png", desc: "Information about screen 3 here"},
         ],
         desc: "Information about screen here",
     },
@@ -144,7 +144,10 @@ for (p of projects){
         pic.id = id;
         pic.className = "photo_selection";
         pic.classList.add(p.id + "-gallery");
+        if (screen.id == "a")
+            pic.classList.add("selected");
         pic.src = path + screen.src; // + ext;
+        // frame.innerHTML = "<div class='view-tag'> View </div>";
         frame.appendChild(pic);
     }
 
@@ -154,7 +157,7 @@ for (p of projects){
     centre.setAttribute("onclick", "openImg('" + p.id + "')");
     centre.classList.add("project_photo");
     centre.classList.add("myImg");
-    centre.src = path + p.screens[0].src;      
+    centre.src = path + p.screens[0].src;
     grid.appendChild(centre);
 
     grid.appendChild(img_gallery);

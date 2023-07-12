@@ -249,10 +249,19 @@ body.dynamic2-bg .proj_grid{
     /* position:absolute */
 }
 
+body {
+    position: relative;
+    height: max-content;
+}
+
+.data{
+    min-height: calc(100vh - 3rem - 2rem - 1rem);
+}
 
 .credits {
     text-align: center;
-    margin-top: 200px;
+    height: 3rem;
+    bottom: 0px;
 }
 
 /* #navbar { */
