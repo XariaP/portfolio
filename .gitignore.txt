@@ -1,7 +1,0 @@
-draft*.html
-test*.html
-images\projects\school
-background1.jpg
-images\banner*.png
-styles\sections.css
-styles\bootstrap*
