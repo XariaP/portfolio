@@ -1,6 +1,7 @@
-draft*
-test*
-images/projects/school
+draft*.html
+test*.html
+images\projects\school
 background1.jpg
-banner*
-styles/sections.css
+images\banner*.png
+styles\sections.css
+styles\bootstrap*
