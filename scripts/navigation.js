@@ -43,4 +43,15 @@ function changeSection(index){
     document.getElementById("project-showcase").style.display = "none";
     if (sections[index].name == "Projects") 
         document.getElementById("project-showcase").style.display = "block";
+    // if (index == 2){
+        // document.getElementById("contentBox").style.width = "max-content";
+        // console.log("k");
+    // }
 }
+
+
+// document.body.innerHTML += "<div class='credits'> \
+//                             © 2023 \
+//                             <br> \
+//                             Coded by Xaria Prempeh with HTML, CSS, and JavaScript \
+//                             </div>";

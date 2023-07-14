@@ -19,7 +19,7 @@ html, body{
             rgb(255, 180, 215) 25%,      
             rgb(236, 235, 235) 50%, 
             rgb(255, 255, 255) 100% */
-            rgb(255, 180, 215) 0%,      
+            rgb(209, 152, 226) 0%,      
             rgb(236, 235, 235) 50%, 
             rgb(245, 243, 243) 100%
     );  
@@ -28,6 +28,33 @@ html, body{
 
 body.dynamic2-bg {
     color: black;
+}
+
+.intro-page.light {
+    background-size: 300% 300%;
+    background-image: linear-gradient(
+        135deg,
+            rgb(48, 156, 180) 0%,
+            rgb(122, 194, 210) 25%,
+            rgb(160, 229, 244) 40%,      
+            rgb(236, 235, 235) 50%, 
+            rgb(245, 243, 243) 100%
+    );  
+    animation: AnimateBG 20s ease infinite;
+}
+
+.dynamic-bg .intro-page.light {
+    background-size: 300% 300%;
+    background-image: linear-gradient(
+        135deg,
+            rgb(111, 100, 173) 0%,
+            rgb(15, 100, 119) 25%,
+            rgb(51, 122, 138) 40%,
+            
+            rgb(102, 126, 157) 50%,
+            rgb(124, 105, 76) 100%
+    );  
+    animation: AnimateBG 20s ease infinite;
 }
 
 .dynamic-bg {
@@ -127,7 +154,7 @@ body.dynamic2-bg {
 }
 
 .dynamic-bg .menuButton{
-    background-color: rgb(31, 29, 29);
+    background-color: rgb(66, 63, 63);
     color: white;
 }
 

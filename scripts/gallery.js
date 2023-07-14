@@ -2,7 +2,7 @@ function changeCentre(pid, imgid, desc){
     document.getElementById(pid).src = document.getElementById(imgid).src;
     // console.log("?");
     // for (let screen of p)
-    document.getElementById(pid + "-info").innerHTML = desc;
+    // document.getElementById(pid + "-info").innerHTML = desc;
 
     
     
@@ -18,17 +18,17 @@ function changeCentre(pid, imgid, desc){
 var projects = [
     {
         id: "proj1",
-        title: "Event Planner (2020)",
+        title: "Manage Upcoming Events",
         screens: [
-            {id: "a", src: "budget/event-list.png", desc: "Information about screen 1 here"},
-            {id: "b", src: "budget/event-create.png", desc: "Information about screen 2 here"},
+            {id: "a", src: "budget/event-create.png", desc: "Information about screen 1 here"},
+            {id: "b", src: "budget/event-list.png", desc: "Information about screen 2 here"},
             {id: "c", src: "budget/event-view.png", desc: "Information about screen 3 here"},
         ],
-        desc: "Information about screen here",
+        desc: "Keeps track of upcoming events",
     },
     {
         id: "proj2",
-        title: "Budget Planner (2020)",
+        title: "Budget & Track Your Spending",
         screens: [
             {id: "a", src: "budget/budget-limit.png", desc: "Information about screen 1 here"},
             {id: "b", src: "budget/budget-logs.png", desc: "Information about screen 2 here"},
@@ -38,7 +38,7 @@ var projects = [
     },
     {
         id: "proj3",
-        title: "Daily Schedule Planner (2020)",
+        title: "Check Daily Schedules",
         screens: [
             {id: "a", src: "budget/routine-view.png", desc: "Information about screen 1 here"},
             {id: "b", src: "budget/routine-day.png", desc: "Information about screen 2 here"},
@@ -48,7 +48,7 @@ var projects = [
     },
     {
         id: "proj4",
-        title: "Shopping List (2020)",
+        title: "Easily Access Shopping Lists",
         screens: [
             {id: "a", src: "budget/shopping-list.png", desc: "Information about screen 1 here"},
             {id: "b", src: "budget/shopping-item.png", desc: "Information about screen 2 here"},
@@ -56,16 +56,16 @@ var projects = [
         ],
         desc: "Information about screen here",
     },
-    {
-        id: "proj5",
-        title: "Profile (2020)",
-        screens: [
-            {id: "a", src: "budget/profile-view.png", desc: "Information about screen 1 here"},
+    // {
+    //     id: "proj5",
+    //     title: "Profile (2020)",
+    //     screens: [
+            // {id: "a", src: "budget/profile-view.png", desc: "Information about screen 1 here"},
             // {id: "b", src: "budget/routine-day.png", desc: "Information about screen 2 here"},
             // {id: "c", src: "budget/routine-view.png", desc: "Information about screen 3 here"},
-        ],
-        desc: "Information about screen here",
-    },
+    //     ],
+    //     desc: "Information about screen here",
+    // },
     // {
     //     id: "proj6",
     //     title: "Profile (2020)",
@@ -168,7 +168,8 @@ for (p of projects){
     var info = document.createElement("div");
     info.className = "info";
     info.id = p.id + "-info";
-    info.innerHTML = p.screens[0].desc; 
+    // info.innerHTML = p.screens[0].desc; 
+    info.innerHTML = p.desc;
     grid.appendChild(info);
 }
 

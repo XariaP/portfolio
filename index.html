@@ -10,69 +10,80 @@
         <link rel='stylesheet' href='styles/layout.css'>
     </HEAD>
 
-    <BODY class="dynamic-bg">
+    <BODY class="dynamic2-bg">
+        <style>
+            body{
+                font-family: "Neue Montreal";
+            }
+        </style>
         <div class="data">
-            <!-- TITLE -->
-            <div class="titleBar" style="border-radius: 100px 100px 0 0;">
-                <div class="titleBar" style="border-radius: 0 0 100px 100px;">
-                    <div style="text-align: center; margin: 20px;"> <br> Xaria Prempeh </div>
-                </div>
-            </div>
-
-            <br>
-
-            <!-- MENU BAR -->
-            <div class="decor">
-                <div class="line">
-                    <div class="circleLine L"> </div>
-                    <div class="circleLine L"> </div>
+            
+            <!-- <img style="width: 100%;" src="./images/banner.png"> -->
+            <div class="intro-page light">
+                <!-- TITLE -->
+                <div class="header" style="height: max-content;">
+                    <div class="titleBar" style="border-radius: 100px 100px 0 0;">
+                        <div class="titleBar" style="border-radius: 0 0 100px 100px;">
+                            <div style="text-align: center; margin: 20px; position: absolute; top:2px; font-size: 2rem; width: calc(100% - 20px - 20px);"> Xaria Prempeh </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="line">
-                    <div class="circleLine R"> </div>
-                    <div class="circleLine R"> </div>
-                </div>
-            </div>
+                <!-- <br> -->
 
-            <div id="navbar" align="center"> </div>
+                <!-- MENU BAR -->
+                <div class="decor">
+                    <div class="line">
+                        <div class="circleLine L"> </div>
+                        <div class="circleLine L"> </div>
+                    </div>
 
-            <!-- CONTENT -->
-            <div id="contentBox">
-                <br>
-                
-                <div id="section-head">
-                    <h2 id="section-heading"> Projects </h2>
-                    <img class="icon" id="section-img" onclick='changeBG()' src="images/pic2.jpg">
-                    <!-- <img class="banner" id="section-img" onclick='changeBG()' src="images/banner.png"> -->
+                    <div class="line">
+                        <div class="circleLine R"> </div>
+                        <div class="circleLine R"> </div>
+                    </div>
                 </div>
 
-                <br>
+                <div id="navbar" align="center"> </div>
 
-                <div id="About Me">
-                    <span style="text-align: center;">
-                        <p>Xaria Prempeh</p>
-                        <p>University of Toronto Class of 2023</p>
-                        <p> Computer Science, German Studies </p>
-                        <!-- <p>2nd July, 2001</p> -->
-                        <p>Barbados, Canada</p>
-                    </span>
-                </div>
-        
-                <div id="Projects">
-                    <!-- <div style="margin: auto; width: max-content; display: block; border-radius: 50px;">
-                        <button class="menuButton" onclick="zoomImage('out')">-</button>
-                        <button class="menuButton" onclick="changeImages()">Next Project</button>
-                        <button class="menuButton" onclick="zoomImage('in')">+</button>
-                    </div> -->
-                </div>
+                <!-- CONTENT -->
+                <div id="contentBox">
+                    <br>
+                    
+                    <div id="section-head">
+                        <h2 id="section-heading"> Projects </h2>
+                        <img class="icon" id="section-img" onclick='changeBG()' src="images/pic2.jpg">
+                        <!-- <img class="banner" id="section-img" onclick='changeBG()' src="images/banner.png"> -->
+                    </div>
 
-                <div id="Resume" style="text-align: center;">
-                    <iframe src="docs/resume.pdf" width="80%" height="400px" frameborder="0">
-                        This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> document, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.
-                    </iframe>
-                </div>
+                    <br>
 
-                <br><br>
+                    <div id="About Me">
+                        <span style="text-align: center;">
+                            <!-- <p>Xaria Prempeh</p> -->
+                            <!-- <p>University of Toronto Class of 2023</p> -->
+                            <!-- <p> Computer Science, German Studies </p> -->
+                            <!-- <p>2nd July, 2001</p> -->
+                            <!-- <p>Barbados, Canada</p> -->
+                        </span>
+                    </div>
+            
+                    <div id="Projects">
+                        <!-- <div style="margin: auto; width: max-content; display: block; border-radius: 50px;">
+                            <button class="menuButton" onclick="zoomImage('out')">-</button>
+                            <button class="menuButton" onclick="changeImages()">Next Project</button>
+                            <button class="menuButton" onclick="zoomImage('in')">+</button>
+                        </div> -->
+                    </div>
+
+                    <div id="Resume" style="text-align: center;">
+                        <!-- <iframe src="docs/resume.pdf" width="80%" height="400px" frameborder="0">
+                            This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> document, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.
+                        </iframe> -->
+                    </div>
+
+                    <br><br>
+                </div>
             </div>
 
             <!-- <div class="division">
@@ -105,8 +116,8 @@
             </div> -->        
 
             <div id="project-showcase">
-
-                <div class="division"> Home Rental Website (2023) </div>
+                
+                <div class="project division"> Home Rental Website (2023) </div>
                 <div class="container">
                     <button onclick="window.location.href='https://www.youtube.com/watch?v=9v3wiIZGIWE';" class="menuButton" > Watch Demo Video </button>
         
@@ -119,6 +130,8 @@
                     <button onclick="window.location.href='https://xariap.github.io/home-rental-design/index.html';" class="menuButton" > Try Demo </button>
                     <p style="font-weight: bold; font-family: monospace; font-size: 1rem; color: red;"> ( ⚠️ Interactive Demo Incomplete: Still transfering code 🛠️ )</p>
                 </div>
+
+                <div class="project division"> Daily Organizer Mobile App (2020) </div>
 
             </div>
 
@@ -138,9 +151,9 @@
         </div>
 
         <p class="credits">
-            © 2023
+            © 2023 Xaria Prempeh
             <br>
-            Coded by Xaria Prempeh with HTML, CSS, and JavaScript
+            <!-- Coded by  with HTML, CSS, and JavaScript -->
         </p>
         
         <!-- <div class="credits">
