@@ -1,0 +1,6 @@
+draft*
+test*
+images/projects/school
+background1.jpg
+banner*
+styles/sections.css
