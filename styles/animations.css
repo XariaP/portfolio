@@ -7,10 +7,7 @@
     /* mix-blend-mode: exclusion; */
 }
 
-.circle.red{
-    background-color: rgb(206, 19, 122);
-    animation: circle_scale 1s 0s ease infinite alternate;
-}
+
 
 /* .dynamic-bg .circle.red {
     background-color: red;
@@ -22,6 +19,11 @@
     background-color: blue;
 } */
 
+.circle.red{
+    background-color: rgb(206, 19, 122);
+    animation: circle_scale 1s 0s ease infinite alternate;
+}
+
 .circle.purple{
     background-color: rgb(198, 58, 206);
     /* background-color: rgb(197, 19, 206); */
@@ -29,6 +31,21 @@
 }
 
 .circle.blue{
+    background-color: rgb(19, 103, 206);
+    animation: circle_scale 4s 0s ease infinite alternate;
+}
+
+.dynamic2-bg .circle.red{
+    background-color: rgb(255, 255, 255);
+    animation: circle_scale 1s 0s ease infinite alternate;
+}
+
+.dynamic2-bg .circle.purple{
+    background-color: rgb(60, 157, 255);
+    animation: circle_scale 2s 0s ease infinite alternate;
+}
+
+.dynamic2-bg .circle.blue{
     background-color: rgb(19, 103, 206);
     animation: circle_scale 4s 0s ease infinite alternate;
 }
@@ -62,7 +79,7 @@
 
     #navbar{
         /* background-color: aliceblue; */
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 }
 

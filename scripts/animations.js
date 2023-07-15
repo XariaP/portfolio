@@ -2,16 +2,32 @@ var circle1 = "<div class='circle red'></div>";
 var circle2 = "<div class='circle purple'></div>";
 var circle3 = "<div class='circle blue'></div>";
 var rows = 3;
-var lines = 2;
+var lines = 1;
+var cols = 1;
 
 lines = document.getElementsByClassName("line").length;
 console.log(lines);
 
 for (let l = 0; l < lines; l++){
-    for (let i = 0; i < rows; i++){
-        document.getElementsByClassName("circleLine L")[l].innerHTML += circle1 + circle2 + circle3;
+    var line = document.getElementsByClassName("line")[l];
+        
+    for (let c = 0; c < cols; c++){
+        var row = document.createElement("div");
+        row.classList.add("circleLine");
+        row.classList.add("L");
+        for (let i = 0; i < rows; i++){
+            row.innerHTML += circle1 + circle2 + circle3;
+        }
+        line.appendChild(row);
     }
-    for (let i = 0; i < rows; i++){
-        document.getElementsByClassName("circleLine R")[l].innerHTML += circle3 + circle2 + circle1;
+    for (let c = 0; c < cols; c++){
+        var row = document.createElement("div");
+        row.classList.add("circleLine");
+        row.classList.add("R");
+        for (let i = 0; i < rows; i++){
+            row.innerHTML += circle1 + circle2 + circle3;
+        }
+        line.appendChild(row);
+        // document.getElementsByClassName("circleLine R")[l].innerHTML += circle3 + circle2 + circle1;
     }
 }

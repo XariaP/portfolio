@@ -1,15 +1,21 @@
 var sections = [
-    {name: "About Me", icon: "pic1.jpg"},
-    {name: "Projects", icon: "pic2.jpg"},
-    {name: "Resume", icon: "pic3.jpg"}
+    {name: "About Me", icon: "pic1.jpg", status: "selected"},
+    {name: "Projects", icon: "pic2.jpg", status: "none"},
+    {name: "Contact Me", icon: "pic3.jpg", status: "none"}
 ];
 
-var current_section = sections[1].name;
+var current_section = sections[0].name;
 
 var navbar = document.getElementById("navbar");
 
 for (let i = 0; i < sections.length; i++){
-    navbar.innerHTML += "<button class='menuButton' onclick='changeSection(\""+  i + "\")'> " + sections[i].name + " </button>";
+    if (sections[i].status == "selected"){
+        navbar.innerHTML += "<button class='menuButton selected' onclick='changeSection(\""+  i + "\")'> " + sections[i].name + " </button>";
+    }
+    else {
+        navbar.innerHTML += "<button class='menuButton' onclick='changeSection(\""+  i + "\")'> " + sections[i].name + " </button>";
+    }
+    
 }
 
 document.getElementById("contentBox").getElementsByTagName("div")[0].style.display = "block";
@@ -25,6 +31,7 @@ function changeSection(index){
     
     document.getElementById("section-heading").innerHTML = sections[index].name;
     document.getElementById("section-img").src = path + sections[index].icon;
+    document.getElementsByClassName('menuButton')[index].classList.add('selected');
     
     // Hide other sections
     var status = "none";
@@ -32,8 +39,10 @@ function changeSection(index){
     for (let i = 0; i < sections.length; i++){
         ID = sections[i].name;
 
-        if (index != i)
+        if (index != i){
             status = "none";
+            document.getElementsByClassName('menuButton')[i].classList.remove('selected');
+        }
         else
             status = "block";
 
@@ -43,6 +52,15 @@ function changeSection(index){
     document.getElementById("project-showcase").style.display = "none";
     if (sections[index].name == "Projects") 
         document.getElementById("project-showcase").style.display = "block";
+    
+    document.getElementById("about-info").style.display = "none";
+    if (sections[index].name == sections[0].name) 
+        document.getElementById("about-info").style.display = "block";
+
+    document.getElementById("resume").style.display = "none";
+    if (sections[index].name == sections[2].name) 
+        document.getElementById("resume").style.display = "block";
+        
     // if (index == 2){
         // document.getElementById("contentBox").style.width = "max-content";
         // console.log("k");
