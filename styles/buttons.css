@@ -6,10 +6,18 @@ button{
 .menuButton{
     margin: 5px;
     border-radius: 50px;
-    background-color: white;
     border: 0px;
     font-size: 15px;
     font-family: 'Courier New', Courier, monospace;
+}
+
+.light-bg .menuButton {
+    background-color: white;
+}
+
+.dark-bg .menuButton{
+    color: white;
+    background-color: rgb(66, 63, 63);
 }
 
 .menuButton:hover, .menuButton.selected{
@@ -28,7 +36,6 @@ button{
     position: absolute;
     left: 35px;
     border-radius: 50px;
-
     font-family: 'Courier New', Courier, monospace;
     background-color: white;
 }

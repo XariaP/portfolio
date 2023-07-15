@@ -7,48 +7,43 @@
     /* mix-blend-mode: exclusion; */
 }
 
+.circle.first{
+    animation: circle_scale 1s 0s ease infinite alternate;
+}
+
+.circle.second{
+    animation: circle_scale 2s 0s ease infinite alternate;
+}
+
+.circle.third{
+    animation: circle_scale 4s 0s ease infinite alternate;
+}
 
 
-/* .dynamic-bg .circle.red {
+/* Light Theme */
+.light-bg .circle.first{
+    background-color: rgb(255, 255, 255);
+}
+
+.light-bg .circle.second{
+    background-color: rgb(60, 157, 255);
+}
+
+.light-bg .circle.third{
+    background-color: rgb(19, 103, 206);
+}
+
+/* Dark Theme */
+.dark-bg .circle.first {
     background-color: red;
 }
-.dynamic-bg .circle.purple {
+.dark-bg .circle.second {
     background-color: white;
 }
-.dynamic-bg .circle.blue {
+.dark-bg .circle.third {
     background-color: blue;
-} */
-
-.circle.red{
-    background-color: rgb(206, 19, 122);
-    animation: circle_scale 1s 0s ease infinite alternate;
 }
 
-.circle.purple{
-    background-color: rgb(198, 58, 206);
-    /* background-color: rgb(197, 19, 206); */
-    animation: circle_scale 2s 0s ease infinite alternate;
-}
-
-.circle.blue{
-    background-color: rgb(19, 103, 206);
-    animation: circle_scale 4s 0s ease infinite alternate;
-}
-
-.dynamic2-bg .circle.red{
-    background-color: rgb(255, 255, 255);
-    animation: circle_scale 1s 0s ease infinite alternate;
-}
-
-.dynamic2-bg .circle.purple{
-    background-color: rgb(60, 157, 255);
-    animation: circle_scale 2s 0s ease infinite alternate;
-}
-
-.dynamic2-bg .circle.blue{
-    background-color: rgb(19, 103, 206);
-    animation: circle_scale 4s 0s ease infinite alternate;
-}
 
 @keyframes circle_scale {
     0% {
@@ -68,17 +63,13 @@
 }
 
 @media only screen and (min-width: 601px) {
-  
     .circleLine.L{
         float: left;
     }
-
     .circleLine.R{ 
         float: right;
     }
-
     #navbar{
-        /* background-color: aliceblue; */
         margin-bottom: 10px;
     }
 }
@@ -86,20 +77,14 @@
 .line{
     align-items: center;
 }
-
 @media only screen and (max-width: 600px) {
     .line{
         display: flex;
-        /* width: max-content; */
         width: 100vw;
         justify-content:space-between;
-        /* justify-content: space-evenly; */
     }
-
     .decor {
         display: flex;
-        /* justify-content: space-between; */
         margin-bottom: 10px;
     }
-
 }

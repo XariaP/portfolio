@@ -1,6 +1,6 @@
-var circle1 = "<div class='circle red'></div>";
-var circle2 = "<div class='circle purple'></div>";
-var circle3 = "<div class='circle blue'></div>";
+var circle1 = "<div class='circle first'></div>";
+var circle2 = "<div class='circle second'></div>";
+var circle3 = "<div class='circle third'></div>";
 var rows = 3;
 var lines = 1;
 var cols = 1;
