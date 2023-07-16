@@ -8,14 +8,11 @@
         <link rel='stylesheet' href='styles/buttons.css'>
         <link rel='stylesheet' href='styles/images.css'>
         <link rel='stylesheet' href='styles/layout.css'>
+        <script src="https://kit.fontawesome.com/a373bb7050.js" crossorigin="anonymous"></script>
+        <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
     </HEAD>
 
     <BODY class="light-bg animate-background">
-        <!-- <style>
-            body{
-                font-family: "Neue Montreal";
-            }
-        </style> -->
         <div class="data">
             <div class="intro-page animate-background">
 
@@ -36,83 +33,29 @@
                 <div id="navbar" align="center"> </div>
 
                 <!-- CONTENT -->
+                <div id="imgBox">
+                    <img class="icon" id="section-img" onclick='changeBG()' src="images/pic1.jpg">
+                </div>   
 
-                <!-- <div id="about-info" style="display: block;">
-                    <div class="container intro">
-                        Hi! My name is Xaria.
-
-                        <br> <br>
-                        
-                        I've been coding for 9 years and I've loved it ever since.
-
-                        <br> <br>
-
-                        I completed my bachelor's in Computer Science at the University of Toronto.
-                        
-                        <br> <br>
-                        
-                        Born and raised in Barbados
-
-                        <br><br>
-
-                        My hobbies are learning languages and listening to music.
-
-                    </div>
-                </div> -->
-
-                <div id="contentBox">
-                    
-                    <div id="section-head">
-                        <h2 id="section-heading"> About Me </h2>
-                        <img class="icon" id="section-img" onclick='changeBG()' src="images/pic1.jpg">
-                    </div>
-
+                <div id="about-info" style="display: block;">
                     <!-- ABOUT -->
-                    <div id="About Me">
-                    </div>                  
+                    <div id="About Me" style="display: block;">
+                    </div>
 
                     <!-- PROJECTS -->
-                    <div id="Projects">
+                    <div id="Projects" style="display: none;">
+                        <!-- <div id="projects-other"> j </div> -->
                     </div>
 
                     <!-- CONTACT -->
-                    <div id="Contact Me" style="text-align: center;">
+                    <div id="Contact Me" style="display: none;">
                     </div>
 
+                    <!-- <i class="fa-solid fa-arrow-down fa-2xl"></i> -->
                 </div>
             </div>
-
-            <!-- <div class="division">
-                Budget Planner (2020)
-            </div>
-
-            <div class="container">
-
-                <div class="proj_grid">
-                    <div class="img_gallery">
-                        <div class="crop" onclick="changeCentre('proj1', 'proj1-a')">
-                            <img id="proj1-a" class="photo_selection" src="./images/projects/budget/budget-savings.png">
-                        </div>
-                        <div class="crop" onclick="changeCentre('proj1', 'proj1-b')">
-                            <img id="proj1-b" class="photo_selection" src="./images/projects/budget/budget-logs.png">
-                        </div>
-                        <div class="crop" onclick="changeCentre('proj1', 'proj1-c')">
-                            <img id="proj1-c" class="photo_selection" src="./images/projects/budget/budget-limit.png">
-                        </div>
-                    </div>
-
-                    <img id="proj1" onclick="openImg('proj1')" class="project_photo myImg" src="./images/projects/budget/budget-logs.png">
-
-                    <div class="info">
-                        Information about screen here 
-                    </div>
-                
-                </div>
-
-            </div> -->        
 
             <div id="project-showcase" style="display: none;">
-                
                 <div class="project division"> Home Rental Website (2023) </div>
                 <div class="container">
                     <button onclick="window.location.href='https://www.youtube.com/watch?v=9v3wiIZGIWE';" class="menuButton" > Watch Demo Video </button>
@@ -131,15 +74,16 @@
 
             </div>
 
-            <div id="about-info" style="display: block;">
+            <!-- <div id="about-info" style="display: block;">
                 <div class="container">
                     Hello!
                 </div>
-            </div>
+            </div> -->
 
             <div id="resume" style="display: none;">
+                <div class="division"> My Resume </div>
                 <div class="container">
-                    <iframe src="docs/resume.pdf" width="80%" height="400px" frameborder="0">
+                    <iframe src="docs/resume.pdf" width="100%" height="400px" frameborder="0">
                         This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> document, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.
                     </iframe>
                 </div>
@@ -164,7 +108,6 @@
 
         <p class="credits">
             © 2023 Xaria Prempeh
-            <br>
             <!-- Coded by  with HTML, CSS, and JavaScript -->
         </p>
         
@@ -180,3 +123,56 @@
 
     </BODY>
 </HTML>
+
+
+<!-- <div id="intro-text" class="container intro"> -->
+    <!-- Hi! My name is Xaria, born and raised in Barbados.
+
+    <br> <br>
+    
+    I've been coding for 9 years and I've loved it ever since.
+
+    <br> <br>
+
+    I completed my bachelor's in Computer Science at the University of Toronto.
+    
+    <br> <br>
+    
+    I mostly like solving the problems because the possibilities are endless with what you can do with code.
+    Anytime I can't get something done, I know there's a solution and that's what keeps me going.
+    It's not just the end result for me, it's the process.
+
+    <br><br>
+
+    My hobbies are learning languages and listening to music. -->
+
+<!-- </div> -->
+
+<!-- <div class="division">
+    Budget Planner (2020)
+</div>
+
+<div class="container">
+
+    <div class="proj_grid">
+        <div class="img_gallery">
+            <div class="crop" onclick="changeCentre('proj1', 'proj1-a')">
+                <img id="proj1-a" class="photo_selection" src="./images/projects/budget/budget-savings.png">
+            </div>
+            <div class="crop" onclick="changeCentre('proj1', 'proj1-b')">
+                <img id="proj1-b" class="photo_selection" src="./images/projects/budget/budget-logs.png">
+            </div>
+            <div class="crop" onclick="changeCentre('proj1', 'proj1-c')">
+                <img id="proj1-c" class="photo_selection" src="./images/projects/budget/budget-limit.png">
+            </div>
+        </div>
+
+        <img id="proj1" onclick="openImg('proj1')" class="project_photo myImg" src="./images/projects/budget/budget-logs.png">
+
+        <div class="info">
+            Information about screen here 
+        </div>
+    
+    </div>
+
+</div> -->        
