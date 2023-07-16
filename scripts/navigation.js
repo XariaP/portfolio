@@ -1,3 +1,8 @@
+var time_to_wait = 40;
+// var type_animation = false;
+// var time_to_wait = 0;
+
+
 var text1 = "\
 ~ Hi! I'm Xaria, a computer programmer born and raised in Barbados, and currently based in Canada. \
 I love to code, not only is it amazing to see my ideas come to life but to know that the possibilities are endless with what you can do with code. \
@@ -31,6 +36,7 @@ var sections = [
 ];
 
 var typing = [];
+var finished = [];
 
 var current_section = sections[0].name;
 
@@ -117,6 +123,9 @@ function changeSection(index){
 typing.push(writeText(text1, 0));
 
 function writeText(text, index){
+    if (finished.includes(index)){
+        return;
+    }
     let l = 0;
     let i = 0;
     var p;
@@ -185,9 +194,12 @@ function writeText(text, index){
             document.getElementById(elemID).innerHTML += text[l++];
             
         }
-        if (l == text.length){ clearInterval(p);} // console.log("yes");}
+        if (l == text.length){ 
+            clearInterval(p);
+            finished.push(index);
+        } // console.log("yes");}
         // document.getElementById("intro").scrollTop = document.getElementById("intro").scrollHeight;
-    }, 40);
+    }, time_to_wait);
     return p;
 }
 
