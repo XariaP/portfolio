@@ -25,7 +25,7 @@ for (let l = 0; l < lines; l++){
         row.classList.add("circleLine");
         row.classList.add("R");
         for (let i = 0; i < rows; i++){
-            row.innerHTML += circle1 + circle2 + circle3;
+            row.innerHTML += circle3 + circle2 + circle1;
         }
         line.appendChild(row);
         // document.getElementsByClassName("circleLine R")[l].innerHTML += circle3 + circle2 + circle1;

@@ -5,7 +5,6 @@ img.icon{
     border-radius: 100%;
 }
 
-
 .img_gallery{
     display: flex;
     row-gap: 10px;
@@ -80,7 +79,8 @@ img.icon{
     transition: 0.3s;
 }
 
-.myImg:hover, .selected {opacity: 0.7;}
+.myImg:hover {opacity: 0.7;}
+/* .selected {opacity: 1;} */
 
 
 

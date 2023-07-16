@@ -12,7 +12,7 @@
         <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
     </HEAD>
 
-    <BODY class="light-bg animate-background">
+    <BODY class="light-bg animate-background" id="top-page">
         <div class="data">
             <div class="intro-page animate-background">
 
@@ -34,7 +34,7 @@
 
                 <!-- CONTENT -->
                 <div id="imgBox">
-                    <img class="icon" id="section-img" onclick='changeBG()' src="images/pic1.jpg">
+                    <img class="icon" id="section-img" onclick='changeBG()' src="images/pic1.png">
                 </div>   
 
                 <div id="about-info" style="display: block;">
@@ -44,7 +44,20 @@
 
                     <!-- PROJECTS -->
                     <div id="Projects" style="display: none;">
-                        <!-- <div id="projects-other"> j </div> -->
+                        <div id="projects-other">
+                            <a href="#proj1-div" class="proj-link">
+                                <div class="proj-button container intro">
+                                    Restify: Home Rental Website
+                                    <span style="float: right;">2023</span>
+                                </div>
+                            <a>
+                            <a href="#proj2-div" class="proj-link">
+                                <div class="proj-button container intro">
+                                    Budgie: Daily Organizer Mobile App
+                                    <span style="float: right;">2020</span>
+                                </div>
+                            </a>
+                        </div>
                     </div>
 
                     <!-- CONTACT -->
@@ -56,7 +69,9 @@
             </div>
 
             <div id="project-showcase" style="display: none;">
-                <div class="project division"> Home Rental Website (2023) </div>
+                <a href="#top-page" class="proj-link">
+                    <div class="project division" id="proj1-div"> Home Rental Website (2023) </div>
+                </a>
                 <div class="container">
                     <button onclick="window.location.href='https://www.youtube.com/watch?v=9v3wiIZGIWE';" class="menuButton" > Watch Demo Video </button>
         
@@ -70,7 +85,9 @@
                     <p style="font-weight: bold; font-family: monospace; font-size: 1rem; color: red;"> ( ⚠️ Interactive Demo Incomplete: Still transfering code 🛠️ )</p>
                 </div>
 
-                <div class="project division"> Daily Organizer Mobile App (2020) </div>
+                <a href="#top-page" class="proj-link">
+                    <div class="project division" id="proj2-div"> Daily Organizer Mobile App (2020) </div>
+                </a>
 
             </div>
 
@@ -81,12 +98,12 @@
             </div> -->
 
             <div id="resume" style="display: none;">
-                <div class="division"> My Resume </div>
+                <!-- <div class="division"> My Resume </div>
                 <div class="container">
                     <iframe src="docs/resume.pdf" width="100%" height="400px" frameborder="0">
                         This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> document, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.
                     </iframe>
-                </div>
+                </div> -->
             </div>
 
             <!-- The Modal -->

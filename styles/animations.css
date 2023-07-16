@@ -35,13 +35,13 @@
 
 /* Dark Theme */
 .dark-bg .circle.first {
-    background-color: red;
+    background-color: rgb(40, 40, 40);
 }
 .dark-bg .circle.second {
-    background-color: white;
+    background-color: rgb(206, 0, 106);
 }
 .dark-bg .circle.third {
-    background-color: blue;
+    background-color: rgb(255, 255, 255);
 }
 
 

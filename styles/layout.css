@@ -46,7 +46,7 @@ body{
 .intro-page {
     padding: 10px;
     background-color: rgb(255, 255, 255);
-    min-height: 100vh;
+    min-height: calc(100vh);
 }
 
 #section-head {
@@ -67,8 +67,15 @@ body{
     border-radius: 50%;
     width: fit-content;
     margin: 10px auto;
-    background-color: rgba(255, 255, 255, 0.403);
     padding: 10px;
+}
+
+.light-bg #imgBox {
+    background-color: rgba(255, 255, 255, 0.403);   
+}
+
+.dark-bg #imgBox {
+    background-color: rgba(0, 0, 0, 0.403);   
 }
 
 #about-info {
@@ -133,6 +140,10 @@ body{
 
 .dark-bg .container {
     background-color: rgba(126, 126, 126, 0.403);
+}
+
+.dark-bg .intro-page .container{
+    background-color: rgba(0, 0, 0, 0.403);   
 }
 
 .intro {
@@ -228,4 +239,48 @@ body{
     margin-top: 0;
     bottom: 0px;
     line-height: 3rem;
+}
+
+.proj-link {
+    text-decoration: none;
+}
+
+.light-bg .proj-link {
+    color: black;
+}
+
+.dark-bg .proj-link {
+    color: white;
+}
+
+.proj-link div {
+    background: linear-gradient(
+        -45deg, 
+        rgba(59,173,227,1) 0%, 
+        rgba(87,111,230,1) 25%, 
+        rgba(152,68,183,1) 51%, 
+        rgba(255,53,127,1) 100%
+    );
+    color: white;
+}
+
+.proj-link div:hover{
+    background: linear-gradient(
+        45deg, 
+        rgba(152,68,183,1) 0%, 
+        rgba(87,111,230,1) 50%, 
+        rgba(59,173,227,1) 100%
+        /* rgba(255,53,127,1) 100% */
+    );
+    /* opacity: 60%; */
+    color: white;
+}
+
+.light-bg a{
+    color: black;
+    /* color: blue; */
+}
+
+.dark-bg a{
+    color: white;
 }

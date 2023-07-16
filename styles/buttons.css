@@ -32,6 +32,10 @@ button{
     cursor: pointer;
 }
 
+/* .menuButton:hover {
+    opacity: 0.8;
+} */
+
 /* .floating-button {
     position: absolute;
     left: 35px;

@@ -22,6 +22,15 @@ html, body{
             rgb(236, 235, 235) 50%, 
             rgb(245, 243, 243) 100%
     );
+    background-image: linear-gradient(
+            90deg,
+            rgb(47, 150, 198) 0%, 
+            /* rgba(87, 111, 230) 0%,  */
+            /* rgba(87, 118, 211) 0%,  */
+            /* rgba(24, 21, 171) 0%, */
+            rgb(236, 235, 235) 50%, 
+            rgb(245, 243, 243) 100%
+    );
 }
 
 .light-bg .intro-page {

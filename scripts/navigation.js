@@ -123,12 +123,22 @@ function writeText(text, index){
     clearInterval(p);
 
     var main = document.getElementById(sections[index].name); //.getElementById("about-info")
+    
+    var save = document.getElementById(sections[index].code + "-other");
+    var newelem = null;
+
+    if (save){
+        newelem = document.createElement("div");
+        newelem.id = sections[index].code + "-other";
+        newelem.innerHTML = save.innerHTML;
+    }
+
     main.innerHTML = "";
-    // for (let c = 0; c <= main.childNodes.length; c++){
-    //     if (main.childNodes[c].ID != sections[index].code + "-other")
-    //         main.childNodes[c].remove();
-    //     // console.log(main.childNodes[c]);
-    // }
+    console.log(newelem);
+    if (newelem)
+        main.appendChild(newelem);
+
+    console.log(save);
     p = setInterval(function(){
         {/* <div id="intro-text" class="container intro"></div> */}
 
