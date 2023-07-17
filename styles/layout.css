@@ -117,11 +117,18 @@ body{
     }
 }
 
+.proj-desc{
+    text-align: left;
+}
+
+.proj-desc li{
+    margin: 20px 0;
+}
 
 
 .info {
     margin: auto;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 

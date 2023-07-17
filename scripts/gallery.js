@@ -24,7 +24,11 @@ var projects = [
             {id: "b", src: "budget/event-list.png", desc: "Information about screen 2 here"},
             {id: "c", src: "budget/event-view.png", desc: "Information about screen 3 here"},
         ],
-        desc: "Keeps track of upcoming events",
+        // desc: "Keeps track of upcoming and past events in a format that's easy to read. Easily store important information about each event and recieve notifications to remind you of upcoming events."
+        desc: "<ul class='proj-desc'> \
+            <li>Keep track of upcoming and past events in a format that's easy to read.</li>\
+            <li>Easily store important information about each event and recieve notifications to remind you of upcoming events.</li>\
+        </ul>",
     },
     {
         id: "proj2",
@@ -34,7 +38,14 @@ var projects = [
             {id: "b", src: "budget/budget-logs.png", desc: "Information about screen 2 here"},
             {id: "c", src: "budget/budget-savings.png", desc: "Information about screen 3 here"},
         ],
-        desc: "Information about screen here",
+        // desc: "Helps you manage your spending habits by setting monthly spending limits on separate categories. Can easily track and display all transactions and deposits you make. It will display a red warning message once you've spent over the limit. You can also go back to view your spending history from previous months. Will calculate how much funds you're expected to have at the end of the month give that you spend within the limits.",
+        desc: "<ul class='proj-desc'> \
+            <li>Manage your spending habits by setting monthly spending limits on separate categories.</li>\
+            <li>Easily track any transactions and deposits you make.</li>\
+            <li>Be alerted whenever you spend over the limit.</li>\
+            <li>View your spending history from previous months.</li>\
+            <li>See funds expected at the end of the month given that you spend within the limits.</li>\
+        </ul>",
     },
     {
         id: "proj3",
@@ -44,17 +55,29 @@ var projects = [
             {id: "b", src: "budget/routine-day.png", desc: "Information about screen 2 here"},
             {id: "c", src: "budget/routine-create.png", desc: "Information about screen 3 here"},
         ],
-        desc: "Information about screen here",
+        desc: "<ul class='proj-desc'> \
+            <li>Store daily routines or course timetables in one place.</li>\
+            <li>Conveniently emphasizes which task you should be doing based on the current time. </li>\
+            <li>Colour coded categories to group similar tasks together.</li>\
+            <li>Ability to set the same task for different times on different days instead of recreating the task.</li>\
+            <li>Recieve reminders for tasks before their specified start time.</li>\
+        </ul>",
     },
     {
         id: "proj4",
-        title: "Easily Access Shopping Lists",
+        title: "Create Shopping Lists",
         screens: [
             {id: "a", src: "budget/shopping-list.png", desc: "Information about screen 1 here"},
             {id: "b", src: "budget/shopping-item.png", desc: "Information about screen 2 here"},
             {id: "c", src: "budget/shopping-section.png", desc: "Information about screen 3 here"},
         ],
-        desc: "Information about screen here",
+        desc: "<ul class='proj-desc'> \
+            <li>Create multiple shopping lists for all your needs.</li>\
+            <li>Conveniently categorize different items to help break down your next shopping trip.</li>\
+            <li>Record quantities of each item as needed.</li>\
+            <li>Fully customizable with colour coding and icons to make reading the shopping list easier.</li>\
+            <li>Simply tap items to colour their icon and mark them as complete.</li>\
+        </ul>",
     },
     // {
     //     id: "proj5",
