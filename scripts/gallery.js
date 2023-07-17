@@ -17,6 +17,22 @@ function changeCentre(pid, imgid, desc){
 
 var projects = [
     {
+        id: "proj4",
+        title: "Create Shopping Lists",
+        screens: [
+            {id: "a", src: "budget/shopping-list.png", desc: "Information about screen 1 here"},
+            {id: "b", src: "budget/shopping-item.png", desc: "Information about screen 2 here"},
+            {id: "c", src: "budget/shopping-section.png", desc: "Information about screen 3 here"},
+        ],
+        desc: "<ul class='proj-desc'> \
+            <li>Create multiple shopping lists for all your needs.</li>\
+            <li>Conveniently categorize different items to help break down your next shopping trip.</li>\
+            <li>Record quantities of each item as needed.</li>\
+            <li>Fully customizable with colour coding and icons to make reading the shopping list easier.</li>\
+            <li>Simply tap items to colour their icon and mark them as complete.</li>\
+        </ul>",
+    },
+    {
         id: "proj3",
         title: "Check Daily Schedules",
         screens: [
@@ -30,21 +46,6 @@ var projects = [
             <li>Colour coded categories to group similar tasks together.</li>\
             <li>Ability to set the same task for different times on different days instead of recreating the task.</li>\
             <li>Recieve reminders for tasks before their specified start time.</li>\
-        </ul>",
-    },
-    {
-        id: "proj1",
-        title: "Manage Upcoming Events",
-        screens: [
-            {id: "a", src: "budget/event-create.png", desc: "Information about screen 1 here"},
-            {id: "b", src: "budget/event-list.png", desc: "Information about screen 2 here"},
-            {id: "c", src: "budget/event-view.png", desc: "Information about screen 3 here"},
-        ],
-        // desc: "Keeps track of upcoming and past events in a format that's easy to read. Easily store important information about each event and recieve notifications to remind you of upcoming events."
-        desc: "<ul class='proj-desc'> \
-            <li>Keep track of upcoming and past events in a format that's easy to read.</li>\
-            <li>Easily store important information about each event.</li>\
-            <li>Recieve notifications to remind you of upcoming events.</li>\
         </ul>",
     },
     {
@@ -65,21 +66,21 @@ var projects = [
         </ul>",
     },
     {
-        id: "proj4",
-        title: "Create Shopping Lists",
+        id: "proj1",
+        title: "Manage Upcoming Events",
         screens: [
-            {id: "a", src: "budget/shopping-list.png", desc: "Information about screen 1 here"},
-            {id: "b", src: "budget/shopping-item.png", desc: "Information about screen 2 here"},
-            {id: "c", src: "budget/shopping-section.png", desc: "Information about screen 3 here"},
+            {id: "a", src: "budget/event-create.png", desc: "Information about screen 1 here"},
+            {id: "b", src: "budget/event-list.png", desc: "Information about screen 2 here"},
+            {id: "c", src: "budget/event-view.png", desc: "Information about screen 3 here"},
         ],
+        // desc: "Keeps track of upcoming and past events in a format that's easy to read. Easily store important information about each event and recieve notifications to remind you of upcoming events."
         desc: "<ul class='proj-desc'> \
-            <li>Create multiple shopping lists for all your needs.</li>\
-            <li>Conveniently categorize different items to help break down your next shopping trip.</li>\
-            <li>Record quantities of each item as needed.</li>\
-            <li>Fully customizable with colour coding and icons to make reading the shopping list easier.</li>\
-            <li>Simply tap items to colour their icon and mark them as complete.</li>\
+            <li>Keep track of upcoming and past events in a format that's easy to read.</li>\
+            <li>Easily store important information about each event.</li>\
+            <li>Recieve notifications to remind you of upcoming events.</li>\
         </ul>",
     },
+
     // {
     //     id: "proj5",
     //     title: "Profile (2020)",
