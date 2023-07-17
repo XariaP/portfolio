@@ -17,6 +17,22 @@ function changeCentre(pid, imgid, desc){
 
 var projects = [
     {
+        id: "proj3",
+        title: "Check Daily Schedules",
+        screens: [
+            {id: "a", src: "budget/routine-view.png", desc: "Information about screen 1 here"},
+            {id: "b", src: "budget/routine-day.png", desc: "Information about screen 2 here"},
+            {id: "c", src: "budget/routine-create.png", desc: "Information about screen 3 here"},
+        ],
+        desc: "<ul class='proj-desc'> \
+            <li>Store daily routines or course timetables in one place.</li>\
+            <li>Conveniently emphasizes which task you should be doing based on the current time. </li>\
+            <li>Colour coded categories to group similar tasks together.</li>\
+            <li>Ability to set the same task for different times on different days instead of recreating the task.</li>\
+            <li>Recieve reminders for tasks before their specified start time.</li>\
+        </ul>",
+    },
+    {
         id: "proj1",
         title: "Manage Upcoming Events",
         screens: [
@@ -27,7 +43,8 @@ var projects = [
         // desc: "Keeps track of upcoming and past events in a format that's easy to read. Easily store important information about each event and recieve notifications to remind you of upcoming events."
         desc: "<ul class='proj-desc'> \
             <li>Keep track of upcoming and past events in a format that's easy to read.</li>\
-            <li>Easily store important information about each event and recieve notifications to remind you of upcoming events.</li>\
+            <li>Easily store important information about each event.</li>\
+            <li>Recieve notifications to remind you of upcoming events.</li>\
         </ul>",
     },
     {
@@ -45,22 +62,6 @@ var projects = [
             <li>Be alerted whenever you spend over the limit.</li>\
             <li>View your spending history from previous months.</li>\
             <li>See funds expected at the end of the month given that you spend within the limits.</li>\
-        </ul>",
-    },
-    {
-        id: "proj3",
-        title: "Check Daily Schedules",
-        screens: [
-            {id: "a", src: "budget/routine-view.png", desc: "Information about screen 1 here"},
-            {id: "b", src: "budget/routine-day.png", desc: "Information about screen 2 here"},
-            {id: "c", src: "budget/routine-create.png", desc: "Information about screen 3 here"},
-        ],
-        desc: "<ul class='proj-desc'> \
-            <li>Store daily routines or course timetables in one place.</li>\
-            <li>Conveniently emphasizes which task you should be doing based on the current time. </li>\
-            <li>Colour coded categories to group similar tasks together.</li>\
-            <li>Ability to set the same task for different times on different days instead of recreating the task.</li>\
-            <li>Recieve reminders for tasks before their specified start time.</li>\
         </ul>",
     },
     {
