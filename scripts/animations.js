@@ -6,7 +6,7 @@ var lines = 1;
 var cols = 1;
 
 lines = document.getElementsByClassName("line").length;
-console.log(lines);
+// console.log(lines);
 
 for (let l = 0; l < lines; l++){
     var line = document.getElementsByClassName("line")[l];

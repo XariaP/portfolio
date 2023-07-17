@@ -9,7 +9,9 @@ img.icon{
     display: flex;
     row-gap: 10px;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-around;
+    /* max-height: 75vh; */
 }
 @media only screen and (max-width: 600px) {
     .img_gallery{

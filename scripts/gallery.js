@@ -3,13 +3,10 @@ function changeCentre(pid, imgid, desc){
     // console.log("?");
     // for (let screen of p)
     // document.getElementById(pid + "-info").innerHTML = desc;
-
-    
-    
     var array = document.getElementsByClassName(pid + "-gallery");
     [...array].forEach(element => {
         element.classList.remove("selected");
-        console.log(array, element);
+        // console.log(array, element);
     });
 
     document.getElementById(imgid).classList.add("selected");
@@ -134,7 +131,8 @@ var projects = [
 
 </div> */}
 
-var space = document.getElementById("project-showcase");
+// var space = document.getElementById("project-showcase");
+var space = document.getElementById("budgie-area");
 var path = "./images/projects/";
 
 for (p of projects){
@@ -316,3 +314,162 @@ span.onclick = function() {
 // }
 
 
+
+
+
+var projects2 = [
+    {
+        id: "proj7",
+        title: "Customize Profile",
+        screens: [
+            {id: "a", src: "0-new-user.png", desc: "Information about screen 1 here"},
+            {id: "b", src: "0-profile-edit.png", desc: "Information about screen 2 here"},
+            {id: "c", src: "0-profile-edit2.png", desc: "Information about screen 3 here"},
+        ],
+        desc: "<ul class='proj-desc'> \
+            <li>Friendly greeting message for new users to introduce them to the app.</li>\
+            <li>Customize profile with a variety of profile images to express yourself.</li>\
+            <li>Track courses/subjects and any activities or clubs you attend.</li>\
+        </ul>",
+    },
+    {
+        id: "proj8",
+        title: "Time Sensitive Background",
+        screens: [
+            {id: "a", src: "4-midday-bg.png", desc: "Information about screen 1 here"},
+            {id: "b", src: "4-evening-bg.png", desc: "Information about screen 2 here"},
+            {id: "c", src: "4-night-bg.png", desc: "Information about screen 3 here"},
+        ],
+        desc: "<ul class='proj-desc'> \
+            <li>Colourful background constantly changes to reflect the time of day.</li>\
+            <li>Quick access to the date and time from the home screen. </li>\
+            <li>Quickly view reminders for deadlines and daily events from the home screen.</li>\
+            <li>Home screen with easy access to the main features. </li>\
+        </ul>",
+    },
+    {
+        id: "proj12",
+        title: "Timetable Checklist",
+        screens: [
+            {id: "a", src: "1-manage-events.png", desc: "Information about screen 1 here"},
+            {id: "b", src: "1-create-event.png", desc: "Information about screen 2 here"},
+            {id: "c", src: "1-view-events-menu.png", desc: "Information about screen 3 here"},
+            {id: "d", src: "1-check-event.png", desc: "Information about screen 3 here"},
+        ],
+        // desc: "Keeps track of upcoming and past events in a format that's easy to read. Easily store important information about each event and recieve notifications to remind you of upcoming events."
+        desc: "<ul class='proj-desc'> \
+            <li>Schedule weekly tasks to help with studying and tracking extra curricular activities.</li>\
+            <li>Quickly create tasks using prompts based on your profile or enter your own.</li>\
+            <li>View today's checklist from the home screen to track progress.</li>\
+            <li>Recieve reminders for uncompleted tasks.</li>\
+        </ul>",
+    },
+    {
+        id: "proj10",
+        title: "Track Deadlines",
+        screens: [
+            {id: "a", src: "5-assignment.png", desc: "Information about screen 1 here"},
+            {id: "b", src: "5-assignment-options.png", desc: "Information about screen 2 here"},
+            {id: "c", src: "5-deadline-view.png", desc: "Information about screen 3 here"},
+            {id: "d", src: "5-deadline-reminder.png", desc: "Information about screen 3 here"},
+            
+        ],
+        // desc: "Keeps track of upcoming and past events in a format that's easy to read. Easily store important information about each event and recieve notifications to remind you of upcoming events."
+        desc: "<ul class='proj-desc'> \
+            <li>Keep track of upcoming deadlines sorted by highest priority first. </li>\
+            <li>Recieve rewards for completing them on time.</li> \
+            <li>Filter deadlines and use customizable tags, e.g. 'Assignment', 'Exam'.</li>\
+            <li>Colour-coded tags and varying rewards to mark overdue and upcoming assignments.</li>\
+            <li>Quickly view a deadline summary right from the home screen.</li>\
+        </ul>",
+    },
+    {
+        id: "proj11",
+        title: "Rewards",
+        screens: [
+            {id: "a", src: "2-assignment-gain.png", desc: "Information about screen 1 here"},
+            {id: "b", src: "2-assignment-loss.png", desc: "Information about screen 2 here"},
+            {id: "c", src: "2-rewards-store.png", desc: "Information about screen 3 here"},
+            {id: "d", src: "2-rewards-store2.png", desc: "Information about screen 3 here"},
+        ],
+        // desc: "Keeps track of upcoming and past events in a format that's easy to read. Easily store important information about each event and recieve notifications to remind you of upcoming events."
+        desc: "<ul class='proj-desc'> \
+            <li>Gives an incentive to finish assignments on time.</li>\
+            <li>Rewards you with more keys the earlier you complete an assignment.</li>\
+            <li>Lose keys when assignments aren't completed on time.</li>\
+            <li>Redeem keys in the image shop to unlock more customization for your profile.</li>\
+        </ul>",
+    },
+    {
+        id: "proj9",
+        title: "Special Greetings",
+        screens: [
+            {id: "a", src: "3-birthday-greeting2.png", desc: "Information about screen 1 here"},
+            {id: "b", src: "3-birthday-greeting.png", desc: "Information about screen 2 here"},
+            {id: "c", src: "3-profile-view-birthday.png", desc: "Information about screen 3 here"},
+        ],
+        // desc: "Helps you manage your spending habits by setting monthly spending limits on separate categories. Can easily track and display all transactions and deposits you make. It will display a red warning message once you've spent over the limit. You can also go back to view your spending history from previous months. Will calculate how much funds you're expected to have at the end of the month give that you spend within the limits.",
+        desc: "<ul class='proj-desc'> \
+            <li>Receive personalized greetings on your birthday and other holidays.</li>\
+            <li>Profile automatically updates your age.</li>\
+            <li>Plans for further customization by allowing opting out of certain greetings or creating custom holidays.</li>\
+        </ul>",
+    },
+]
+
+var space = document.getElementById("school-assist-area");
+var path = "./images/projects/school/";
+
+for (p of projects2){
+    // Create divider
+    var title = document.createElement("div");
+    title.className = "division";
+    title.innerText = p.title;
+
+    space.appendChild(title);
+
+    var container = document.createElement("div");
+    container.className = "container";
+    space.appendChild(container);
+
+    var grid = document.createElement("div");
+    grid.className = "proj_grid";
+    container.appendChild(grid);
+
+    var img_gallery = document.createElement("div");
+    img_gallery.className = "img_gallery";
+
+    for (screen of p.screens){
+        var frame = document.createElement("div");
+        var id = p.id + "-" + screen.id;
+        frame.className = "crop";
+        frame.setAttribute("onclick", "changeCentre('" + p.id + "', '" + id + "', '" + screen.desc + "')");
+        img_gallery.appendChild(frame);
+
+        var pic = document.createElement("img");
+        pic.id = id;
+        pic.className = "photo_selection";
+        pic.classList.add(p.id + "-gallery");
+        if (screen.id == "a")
+            pic.classList.add("selected");
+        pic.src = path + screen.src; // + ext;
+
+        frame.appendChild(pic);
+    }
+    
+    var centre = document.createElement("img");
+    centre.id = p.id;
+    centre.setAttribute("onclick", "openImg('" + p.id + "')");
+    centre.classList.add("project_photo");
+    centre.classList.add("myImg");
+    centre.src = path + p.screens[0].src;
+    grid.appendChild(centre);
+
+    grid.appendChild(img_gallery);
+
+    var info = document.createElement("div");
+    info.className = "info";
+    info.id = p.id + "-info";
+    info.innerHTML = p.desc;
+    grid.appendChild(info);
+}

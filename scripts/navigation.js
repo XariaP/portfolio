@@ -143,11 +143,11 @@ function writeText(text, index){
     }
 
     main.innerHTML = "";
-    console.log(newelem);
+    // console.log(newelem);
     if (newelem)
         main.appendChild(newelem);
 
-    console.log(save);
+    // console.log(save);
     p = setInterval(function(){
         {/* <div id="intro-text" class="container intro"></div> */}
 
@@ -183,7 +183,7 @@ function writeText(text, index){
                 l++;
             }
             element += text[l];
-            console.log(element);
+            // console.log(element);
 
             var elemID = sections[index].code + "-text-" + i;
             document.getElementById(elemID).innerHTML += element;
